@@ -1,0 +1,483 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+span{
+    color: crimson;
+}
+a{
+    text-decoration: none;
+}
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #f3f3f3;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(15, 15, 15);
+    border-radius: 3px;
+    transition: all 3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background:crimson;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+}
+
+/*DEBUT*/
+#hero{
+        background-image: url(./img/CATPLE_WALLPAPERS_184.jpg);
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+        z-index: 1;
+}
+/*nav deb*/
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0 0 124px;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+nav.sticky {
+    background: #282922;
+    padding: 4px 0 14px 64px;
+    opacity: .8;
+}
+.navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+.navbar .logo a{
+    font-weight: 500;
+    font-size: 35px;
+    color: white;
+}
+.navbar .logo {
+    max-width: 1200px;
+    margin: 0px;
+    padding: 2px;
+    justify-content: flex-start;
+}
+.navbar .menu{
+    display: flex;
+    position: relative;
+  }
+.navbar .menu li{
+    list-style: none;
+    margin: 0 8px;
+  }
+.navbar .menu a{
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    padding: 6px 0;
+    transition: all 1s ease;
+  }
+.navbar .menu a:hover{
+    color: crimson;
+  }
+.menu a{
+    color: #FFF;
+  }
+.menu a:hover{
+    color: crimson;
+  }
+
+  /*nav fin*/
+
+    /*DEB HERO*/
+
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: white;
+    top: 10px;
+
+}
+#hero .name{
+    color: crimson;
+}
+.hero p {
+    font-size: 60px;
+    color: white;
+}
+
+.cta{
+    display: inline-block;
+    padding: 18px 25px;
+    color:rgb(255, 254, 254);
+    background-color: transparent;
+    border: 2px solid crimson;
+    border-radius: 10%;
+    font-size:.7rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-top: 20px;
+    transition: .6s ease ;
+    transition-property: background-color, color;
+}
+.cta:hover {
+    color: white;
+    background-color: crimson;
+}
+.cta2{
+    display: inline-block;
+    padding: 18px 25px;
+    color:crimson;
+    background-color: transparent;
+    border: 2px solid crimson;
+    border-radius: 10%;
+    font-size:.7rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-top: 20px;
+    transition: .6s ease ;
+    transition-property: background-color, color;
+}
+.cta2:hover {
+    color: white;
+    background-color: crimson;
+}
+
+    /*FIN HERO*/
+
+
+    /*OBJEC Section*/
+
+.services{
+    flex-direction: column;
+    text-align: center;
+    max-width: 15OOpx;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.section-title{
+    font-size: 25px;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#objectifs .service-top p{
+    font-size: 1.3rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300px;
+    letter-spacing: .05rem;
+    font-family: monospace;
+}
+
+
+
+.icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+
+/*Fin Srvice*/
+
+/*Debut Project*/
+
+#projects .projects-header h1 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+#projects .all-projects {
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+#projects .all-projects .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#projects .project-info {
+    padding: 30px;
+    flex-basis: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg,#585757 0%, #666565 100%);
+    height: 300px;
+    width: 300px;
+}
+#projects .project-info h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color:crimson;
+}
+#projects .project-info h2 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px;
+    color: white;
+}
+#projects .project-info p {
+    color: white;
+}
+#projects .project-img {
+    flex-basis: 50%;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+#projects .project-img::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg,#bebbbb 0%, #e0dddd 100%);
+    opacity: .7;
+}
+#projeccs .project-img img {
+    transition: .2s ease transform;
+}
+#projects .project-item:hover .project-img img {
+    transform: scale(1.3);
+}
+
+
+/*Fin Project*/
+
+
+            /* My Skills CSS */         
+
+ .skills{
+    background: #F0F8FF;
+  }
+.skills .content{
+    padding: 10px 0;
+  }
+  .skills .skills-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .skills-details .text{
+    width: 25%;
+  }
+ .skills-details .boxes{
+   width: 45%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+ .skills-details .box{
+   width: calc(100% / 2 - 20px);
+   margin: 20px 0;
+ }
+ .skills-details .boxes .topic{
+   font-size: 20px;
+   color: #f2f3f7;
+ }
+ .skills-details .boxes .per{
+   font-size: 60px;
+   color: #f6f7fc;
+ }
+ .boxes .box {
+    margin: 20px 0;
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 20px 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 12%);
+    cursor: default;
+    transition: all 0.4s ease;
+    background-image: url(./img/CATPLE_WALLPAPERS_184.jpg);
+    background-size: cover;
+    color:black
+}
+.skills-details .boxes .box:hover .topic,
+.skills-details .boxes .box:hover .per{
+  color: crimson;
+  transition: all 0.4s ease;
+}
+
+        /*SKILLS FIN*/
+
+
+
+
+
+
+
+label {
+    text-align: left;
+}
+
+    /*Deb EDUC*/
+
+#SERV  {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+#SERV .row .box .section-title {
+    font-size: 35px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 12px;
+}
+.row .box {
+    margin: 20px 0;
+    width: calc(100% / 3 - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 20px 5px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 12%);
+    cursor: default;
+    transition: all 0.4s ease;
+    background-image: url(./img/projects.jpg);
+    background-size: cover;
+    color:#0E2431 ;
+}
+.row :hover {
+    background-position: right bottom;
+    transition: all .5s ;
+    opacity: .8;
+    color: crimson;
+}
+
+        /*Fin EDUC*/
+
+
+/* Contact Me CSS */
+
+.contact{
+    background: #F0F8FF;
+  }
+  .contact .content{
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  .contact .prop{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    
+  }
+  .contact .prop .box {
+      text-align: center;
+      box-shadow: 0 12px 10px rgb(0 0 0 / 12%);
+  }
+
+
+    /*About*/
+
+.about .about-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.about .about-details .left {
+    width: 45%;
+}
+.about-details .right {
+    width: 55%;
+}
+.about-details .right p {
+    text-align: justify;
+    color: #0E2431;
+}
+section .topic {
+    color: #0E2431;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+section .content {
+    width: 80%;
+    margin: 40px auto;
+    font-family: 'Poppins', sans-serif;
+}
+/* fin About*/
+
+
+footer{
+    background: #282922;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    opacity: .8;
+}
+.text:hover span {
+    color: white;
+}
+/*FIN*/
